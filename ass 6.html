@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Menu Grid</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f7f7f7;
+        }
+
+        h1 {
+            text-align: left;
+            color: #6c8091;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .menu-item {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .menu-item-content {
+            padding: 15px;
+            text-align: left;
+        }
+
+        .menu-item h3 {
+            font-size: 18px;
+            color: #6c8091;
+            margin-bottom: 10px;
+        }
+
+        .menu-item a {
+            font-size: 14px;
+            color: #d0b200;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .menu-item a:hover {
+            text-decoration: underline;
+        }
+
+        .menu-item a::after {
+            content: "→";
+            margin-left: 5px;
+            transition: margin-left 0.3s ease;
+        }
+
+        .menu-item a:hover::after {
+            margin-left: 10px;
+        }
+
+        @media (max-width: 1200px) {
+            .menu-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 992px) {
+            .menu-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .menu-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Explore Menu</h1>
+    <div class="menu-grid">
+        <div class="menu-item">
+            <img src="https://ik.imagekit.io/4z8covdo9/Full%20stack/em-ginger-fried-img.png?updatedAt=1702351480869" alt="Non-Veg Starters">
+            <div class="menu-item-content">
+                <h3>Non-Veg Starters</h3>
+                <a href="#">View More</a>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="https://ik.imagekit.io/4z8covdo9/Full%20stack/em-ginger-fried-img.png?updatedAt=1702351480869" alt="Non-Veg Starters">
+            <div class="menu-item-content">
+                <h3>Non-Veg Starters</h3>
+                <a href="#">View More</a>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="https://ik.imagekit.io/4z8covdo9/Full%20stack/em-ginger-fried-img.png?updatedAt=1702351480869" alt="Non-Veg Starters">
+            <div class="menu-item-content">
+                <h3>Non-Veg Starters</h3>
+                <a href="#">View More</a>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="https://ik.imagekit.io/4z8covdo9/Full%20stack/em-ginger-fried-img.png?updatedAt=1702351480869" alt="Non-Veg Starters">
+            <div class="menu-item-content">
+                <h3>Non-Veg Starters</h3>
+                <a href="#">View More</a>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="https://ik.imagekit.io/4z8covdo9/Full%20stack/em-ginger-fried-img.png?updatedAt=1702351480869" alt="Non-Veg Starters">
+            <div class="menu-item-content">
+                <h3>Non-Veg Starters</h3>
+                <a href="#">View More</a>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="https://ik.imagekit.io/4z8covdo9/Full%20stack/em-ginger-fried-img.png?updatedAt=1702351480869" alt="Non-Veg Starters">
+            <div class="menu-item-content">
+                <h3>Non-Veg Starters</h3>
+                <a href="#">View More</a>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="https://ik.imagekit.io/4z8covdo9/Full%20stack/em-ginger-fried-img.png?updatedAt=1702351480869" alt="Non-Veg Starters">
+            <div class="menu-item-content">
+                <h3>Non-Veg Starters</h3>
+                <a href="#">View More</a>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="https://ik.imagekit.io/4z8covdo9/Full%20stack/em-ginger-fried-img.png?updatedAt=1702351480869" alt="Non-Veg Starters">
+            <div class="menu-item-content">
+                <h3>Non-Veg Starters</h3>
+                <a href="#">View More</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
